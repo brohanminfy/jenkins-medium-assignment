@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'python:3.9-slim'
+            args '-u root:root'  // Run container as root so you can install packages if needed
+        }
+    }
 
     environment {
         VENV = 'venv'
