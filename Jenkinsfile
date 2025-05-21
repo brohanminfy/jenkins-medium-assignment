@@ -6,24 +6,8 @@ pipeline {
         DOCKER_CREDENTIALS_ID = '8381c3d5-d3c3-4ae8-b63b-531205251832'
     }
 
-    stages {
-        stage("Install") {
-            steps {
-             echo "Installing"
-            }
-        }
-
-        stage("Linting") {
-            steps {
-               echo "linting step"
-            }
-        }
-
-        stage("Testing") {
-            steps {
-           echo "Testing"
-            }
-        }
+   
+            
 
         stage("Build Docker Image") {
             steps {
@@ -43,4 +27,4 @@ pipeline {
             }
         }
     }
-}
+
