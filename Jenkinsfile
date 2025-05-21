@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        VENV = 'venv'
         DOCKER_IMAGE = 'brohan21/minfy-python-demo'
         DOCKER_CREDENTIALS_ID = '8381c3d5-d3c3-4ae8-b63b-531205251832'
     }
